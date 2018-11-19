@@ -38,7 +38,7 @@ TODO: Put more badges here.
 >  - Ability to generate and consume and overrides file to suppress errors for specific matches
 >  - Signature part 'contents' to analyze file contents
 >
-> _VerizonDigital/frisky. (2018). _GitHub_. Retrieved 16 November 2018, from <https://github.com/VerizonDigital/frisky/blob/master/README.md>
+> _VerizonDigital/frisky_. (2018). _GitHub_. Retrieved 16 November 2018, from <https://github.com/VerizonDigital/frisky/blob/master/README.md>
 
 ## Background
 
@@ -198,12 +198,10 @@ frisky_sleuth.file.save(violations, '/path/to/violations.json')
 
 ## Contribute
 
-See [the contribute file](contribute.md)!
+See [the contribute file](CONTRIBUTING.md)!
 
-PRs accepted.
+PRs happily accepted.
 
 ## License
 
-COPYRIGHT © 2018 Verizon.
-
-All rights reserved.
+[Apache-2.0](LICENSE) © [Greg Swindle](https://github.com/gregswindle).
