@@ -1,0 +1,10 @@
+{
+  "generator-python-lib": {
+    "projectName": "frisky_sleuth",
+    "fullName": "Greg Swindle",
+    "email": "greg@swindle.net",
+    "gitlabName": "gregswindle",
+    "ciProvider": "Travis CI",
+    "version": "5.0.1"
+  }
+}
