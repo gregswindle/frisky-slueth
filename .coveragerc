@@ -6,12 +6,17 @@ directory = docs/reports/coverage
 [report]
 
 # Show which lines were missed in summary report.
-show_missing = true
+show_missing = True
+
+# Target coverage percentage.
+# If the total coverage measurement is under this
+# value, then exit with a status code of 2.
+fail_under = 100
 
 [run]
 
 # Measure branch coverage in addition to statement coverage.
-branch = true
+branch = True
 
 # The source directory to measure.
 source = frisky_sleuth/

@@ -17,9 +17,7 @@ def by_regex(data, signature):
 
     result = None
 
-    is_match = re.compile(signature.pattern, re.IGNORECASE).search(data)
-
-    if is_match:
+    if re.compile(signature.pattern, re.IGNORECASE).search(data):
         result = data.strip()
 
     return result
@@ -34,6 +32,7 @@ def by_string(data, signature):
     """
 
     result = None
+
     if data == signature.pattern:
         result = data
 
@@ -53,6 +52,7 @@ def by_type(data, signature):
     typematcher[SignatureConstants.Types.REGEX] = by_regex
 
     match_fxn = typematcher.get(signature.type)
+
     return match_fxn(data, signature)
 
 def contents(file_contents, signature):
@@ -82,6 +82,7 @@ def extension(ext, signature):
 
     if by_type(ext, signature):
         violation = Violation.factory(ext, signature)
+
     return violation
 
 
@@ -90,8 +91,10 @@ def filename(file_name, signature):
     Match by filename.
     """
     violation = None
+
     if by_type(file_name, signature):
         violation = Violation.factory(file_name, signature)
+
     return violation
 
 def matches(data, signature):
@@ -122,7 +125,7 @@ def path(filepath, signature):
 
     violation = None
 
-    # filepath = os.path.join(subdir, file_name)
     if by_type(filepath, signature):
         violation = Violation.factory(filepath, signature)
+
     return violation

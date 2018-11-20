@@ -2,7 +2,7 @@
 
 [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
-TODO: Put more badges here.
+[![codecov](https://codecov.io/gh/gregswindle/frisky_sleuth/branch/master/graph/badge.svg?style=flat-square)](https://codecov.io/gh/gregswindle/frisky_sleuth)
 
 > Inspect repository resources against a list of patterns to detect sensitive or dangerous information by file contents, extension, name, and path.
 
@@ -13,10 +13,13 @@ TODO: Put more badges here.
 - [Security](#security)
 - [Background](#background)
 - [Install](#install)
+  * [From Git](#from-git)
 - [Usage](#usage)
+  * [Terminal](#terminal)
+  * [REPL](#repl)
 - [API](#api)
   * [Terminal (command-line)](#terminal-command-line)
-  * [REPL](#repl)
+  * [Package/library](#packagelibrary)
 - [Maintainers](#maintainers)
 - [Contribute](#contribute)
 - [License](#license)
@@ -205,3 +208,5 @@ PRs happily accepted.
 ## License
 
 [Apache-2.0](LICENSE) © [Greg Swindle](https://github.com/gregswindle).
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fgregswindle%2Ffrisky_sleuth.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fgregswindle%2Ffrisky_sleuth?ref=badge_large)
