@@ -4,7 +4,6 @@ tests.test_evaluate_match_match
 """
 
 import unittest
-from unittest.mock import Mock, patch
 from frisky_sleuth.constants import SignatureConstants
 from frisky_sleuth.evaluate import match
 from frisky_sleuth.signature import Signature
@@ -68,9 +67,21 @@ class TestEvaluateMatch(unittest.TestCase):
         """
         try:
             signature = Signature({'type': 'UNKNOWN'})
-            match.by_type('', signature)
+            match.by_type('foldy-roldy-do-da-day', signature)
         except ValueError:
             self.assertRaises(ValueError)
+
+    def test_evaluate_match_by_type_type_error(self):
+        """
+        frisky_sleuth.evaluate.match.by_type
+        """
+        signature = Signature({
+            'part': SignatureConstants.Parts.PATH,
+            'type': 'UNKNOWN'
+        })
+        with self.assertRaises(Exception):
+            match.by_type('lalalalala', signature)
+
 
     def test_evaluate_match_contents(self):
         """

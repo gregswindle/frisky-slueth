@@ -55,6 +55,7 @@ def by_type(data, signature):
 
     return match_fxn(data, signature)
 
+
 def contents(file_contents, signature):
     """
     Evaluate a file's contents line-by-line for secrets.
