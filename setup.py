@@ -59,11 +59,11 @@ setup(
     scripts=[],
     test_suite='tests',
     tests_require=[
-        'codecov>=2.0.3,<3.0.0',
-        'coverage>=4.0.3,<5.0.0',
-        'Sphinx>=1.4.1,<2.0.0',
-        'tox>=2.3.1,<3.0.0',
-        'virtualenv>=15.0.1,<16.0.0'
+        'codecov>=2.0.15',
+        'coverage>=4.5.2',
+        'Sphinx>=1.8.2',
+        'tox>=3.5.3',
+        'virtualenv>=16.1.0'
     ],
     url='https://github.com/gregswindle/frisky_sleuth-sleuth#readme',
     version='1.0.0'

@@ -1,36 +1,43 @@
 dist: trusty
 sudo: required
 language: python
-python:
-  - "3.2"
-  - "3.3"
-  - "3.4"
-  - "3.5"
-  - "3.6"
-  - "3.7"
-  - "3.7.1"
-  # PyPy Versions
-  - "pypy3.5"
-env:
-  - TOXENV=py32
-  - TOXENV=py33
-  - TOXENV=py34
-  - TOXENV=py35
-  - TOXENV=py36
-  - TOXENV=py37
-  - TOXENV=pypy
-  - TOXENV=lint
-# before_install:
-#   - virtualenv --python=python3 venv
-#   - source ./venv/bin/activate
-install:
-  - pip install -r requirements-dev.txt
 matrix:
   fast_finish: true
+  include:
+    - python: 3.7.1
+      env: TOXENV=py371
+    - python: 3.7.1
+      env: TOXENV=lint,codecov
+
+    - python: 3.6
+      env: TOXENV=py36
+    - python: 3.6
+      env: TOXENV=lint,codecov
+
+    - python: 3.5
+      env: TOXENV=py35
+    - python: 3.5
+      env: TOXENV=lint,codecov
+
+    - python: 3.4
+      env: TOXENV=py34
+    - python: 3.4
+      env: TOXENV=lint,codecov
+
+    - python: pypy
+      env: TOXENV=pypy
+    - python: pypy
+      env: TTOXENV=lint,codecov
+
+install:
+  - pip install -r requirements-dev.txt
+
 before_script:
   - "curl -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/fossas/fossa-cli/master/install.sh | sudo bash"
+
 script:
   - python setup.py test coverage
+
 after_success:
   - curl -Lo travis_after_all.py https://git.io/travis_after_all
   - python travis_after_all.py

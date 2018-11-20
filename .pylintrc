@@ -48,7 +48,7 @@ confidence=
 # Enable the message, report, category or checker with the given id(s). You can
 # either give multiple identifier separated by comma (,) or put this option
 # multiple time. See also the "--disable" option for examples.
-#enable=
+enable=too-complex
 
 # Disable the message, report, category or checker with the given id(s). You
 # can either give multiple identifiers separated by comma (,) or put this
@@ -319,6 +319,9 @@ int-import-graph=
 
 
 [DESIGN]
+
+# Maximum cyclomatic complexity
+max-complexity=11
 
 # Maximum number of arguments for function / method
 max-args=5
