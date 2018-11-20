@@ -2,7 +2,9 @@
 
 [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
+
 [![codecov](https://codecov.io/gh/gregswindle/frisky_sleuth/branch/master/graph/badge.svg?style=flat-square)](https://codecov.io/gh/gregswindle/frisky_sleuth)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fgregswindle%2Ffrisky_sleuth.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fgregswindle%2Ffrisky_sleuth?ref=badge_shield)
 
 > Inspect repository resources against a list of patterns to detect sensitive or dangerous information by file contents, extension, name, and path.
 
@@ -207,6 +209,6 @@ PRs happily accepted.
 
 ## License
 
-[Apache-2.0](LICENSE) © [Greg Swindle](https://github.com/gregswindle).
-
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fgregswindle%2Ffrisky_sleuth.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fgregswindle%2Ffrisky_sleuth?ref=badge_large)
+
+[Apache-2.0](LICENSE) © [Greg Swindle](https://github.com/gregswindle).
