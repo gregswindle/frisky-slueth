@@ -65,11 +65,12 @@ class TestEvaluateMatch(unittest.TestCase):
         """
         frisky_sleuth.evaluate.match.by_type
         """
-        try:
-            signature = Signature({'type': 'UNKNOWN'})
+        with self.assertRaises(ValueError):
+            signature = Signature({
+                'part': SignatureConstants.Parts.PATH,
+                'type': 'UNKNOWN'
+            })
             match.by_type('foldy-roldy-do-da-day', signature)
-        except ValueError:
-            self.assertRaises(ValueError)
 
     def test_evaluate_match_by_type_type_error(self):
         """

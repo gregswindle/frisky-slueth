@@ -9,26 +9,6 @@ matrix:
     - python: 3.7
       env: TOXENV=lint
 
-    - python: 3.6
-      env: TOXENV=py36
-    - python: 3.6
-      env: TOXENV=lint
-
-    - python: 3.5
-      env: TOXENV=py35
-    - python: 3.5
-      env: TOXENV=lint
-
-    - python: 3.4
-      env: TOXENV=py34
-    - python: 3.4
-      env: TOXENV=lint
-
-    - python: pypy
-      env: TOXENV=pypy
-    - python: pypy
-      env: TOXENV=lint
-
 install:
   - pip install -r requirements-dev.txt
 
